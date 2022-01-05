@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Solution  URL: [Add solution URL here]()
+- Solution  URL: [Add solution URL here](https://sinapsideo.github.io/NFT-Preview-Card/)
 
 
 ### Built with
