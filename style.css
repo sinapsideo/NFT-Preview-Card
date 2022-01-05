@@ -1,0 +1,160 @@
+:root {
+  --dark_blue: hsl(217, 54%, 11%);
+  --card_bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --whitecol:hsl(0, 0%, 100%);
+  --cyan: hsl(178, 100%, 50%);
+  --softblue: hsl(215, 51%, 70%);
+}
+/******** RESET ********/
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+/**** BOXES DESIGN ****/
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark_blue);
+}
+
+.container {
+  width: 280px;
+  height: 480px;
+  padding: 15px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #122137, #152841);
+  box-shadow:  6px 6px 7px #0c1624,
+               0px 0px 0px #1c3456;
+  transition: .2s ease;
+}
+
+/**********************/
+.image {
+  position: relative;
+  height: 280px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+/******** OVERLAY ********/
+.overlay {
+
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  background-color: rgba(0, 255, 247, 40%) ;
+  transition: .3s ease;
+}
+.overlay .icon_hover img{
+  position: absolute;
+  height: 50px;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+
+}
+/*************************/
+h1 {
+  color: var(--whitecol);
+  font-size: 1.4em;
+  margin-bottom: 18px;
+  font-weight: 400;
+  transition: .3s ease;
+}
+
+h1:hover {
+  color: var(--cyan);
+  cursor: pointer;
+
+}
+
+.description {
+  padding-bottom: 15px;
+  color: var(--softblue);
+  font-weight: 300;
+}
+.price-data {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+
+}
+.price-data .data {
+  color: var(--softblue);
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+
+}
+.price-data .data img {
+    margin-right: 7px;
+}
+.price-data .price {
+  color: var(--cyan);
+  display: flex;
+  align-items: center;
+
+}
+
+.price-data .price img {
+  margin-right: 7px;
+}
+
+hr {
+  margin: 0;
+  border:0;
+  height: 2px;
+  background-color: var(--line);
+  margin-bottom: 15px;
+}
+.creation {
+  display: flex;
+  align-items: center;
+  color: var(--softblue);
+  font-weight: 300;
+  font-size: 14px;
+}
+.creation span {
+  color: var(--whitecol);
+  transition: .3s ease;
+}
+.creation span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.creation img {
+  height: 28px;
+  margin-right: 10px;
+  border: .5px solid var(--whitecol);
+  border-radius: 50%;
+  opacity: 80%;
+}
+/************ MOBILE ************/
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
